@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+
+}
+
+
+.git {
+    font-size: 15px;
+    color: deeppink;
+    border: 3px solid #3ee60e;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 0px 1px;
+    margin-left: 20px;
+    font-weight: 900;
+   
+}
+
+#output {
+    height: 50px;
+    background-color: lightblue;
+    width: 249px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    color: green;
+    font-family: sans-serif;
+    margin-top: 21px;
+    font-weight: bold;
+}
+
+.css {
+    width: 120px;
+    height: 50px;
+    border: 3px solid rgb(9, 83, 186);
+    font-size: 30px;
+    text-align: center;
+    outline-color: red;
+    column-gap: 10px;
+    margin-top: 75px;
+}
+.classy{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+}
+.van {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+}
+.man{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;  
+    margin-bottom: 50px;  
+}
+.man button{
+    font-size: 20px;
+    height: 42px;
+    width: 60px;
+    border: 1px solid red;
+    color: forestgreen;
+}
+.man p{
+    border: 2px solid blue;
+    height: 40px;
+    width: 191px;
+    margin-right: 40px;
+    text-align: center;
+    color: green;
+    font-weight: 600;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10px;
+}
+.ak{
+    width: 150px;
+    font-size: 37px;
+    margin-right: 7px;
+    outline-color: red;
+    color: green;
+    font-weight: lighter;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 23px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+  
+.van{
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+
+}

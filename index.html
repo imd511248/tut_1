@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut_1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <input type="text" placeholder="Enter" id="input1" class="css">
+            <input type="text" placeholder="Enter" id="input2" class="css">
+        </div>
+        <p id="output"></p>
+        <div class="van">
+
+            <button onclick="result1()" class="git">ADD</button>
+            <button onclick="result2()" class="git">SUB</button>
+            <button onclick="result3()" class="git">MUL</button>
+            <button onclick="result4()" class="git">DVD</button>
+            <button onclick="result5()" class="git">RMD</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="classy"> 
+            <input type="text" placeholder="Enter" id="a" class="ak">
+            <input type="text" placeholder="Enter" id="b" class="ak">
+            <input type="text" placeholder="Enter" id="c" class="ak">
+        </div>
+<div class="man">
+    <p id="book"></p>
+    <button onclick="peek()">tap</button>
+</div>
+        
+    </div>
+
+
+
+
+    <script>
+
+        function peek() {
+            let a = document.getElementById('a').value
+            let b = document.getElementById('b').value
+            let c = document.getElementById('c').value
+            a = parseInt(a)
+            b = parseInt(b)
+            c = parseInt(c)
+            if (a > b && a > c) {
+                document.getElementById('book').innerText = a + ' is greater'
+            }
+            else if (b > a && b > c) {
+                document.getElementById('book').innerText = b + ' is greater'
+            }
+            else if (b == a && b == c) {
+                document.getElementById('book').innerText = b + ' all is equal'
+            }
+            else if (b > a && b == c) {
+                document.getElementById('book').innerText = a + ' is small both'
+            }
+            else if (a > b && a == c) {
+                document.getElementById('book').innerText = b + ' is small both'
+            }
+           
+            else {
+                document.getElementById('book').innerText = c + ' is greater'
+            }
+        }
+
+
+
+        function result1() {
+            let input1 = document.getElementById('input1').value
+            let input2 = document.getElementById('input2').value
+            input1 = parseInt(input1)
+            input2 = parseInt(input2)
+            let output = document.getElementById('output')
+            let sum = input1 + input2
+            output.innerText = ' Sum of ' + input1 + ' and ' + input2 + ' = ' + sum
+        }
+        function result2() {
+            let input1 = document.getElementById('input1').value
+            let input2 = document.getElementById('input2').value
+            input1 = parseInt(input1)
+            input2 = parseInt(input2)
+            let output = document.getElementById('output')
+            let SUB = input1 - input2
+            output.innerText = ' Sum of ' + input1 + ' and ' + input2 + ' = ' + SUB
+        }
+        function result3() {
+            let input1 = document.getElementById('input1').value
+            let input2 = document.getElementById('input2').value
+            input1 = parseInt(input1)
+            input2 = parseInt(input2)
+            let output = document.getElementById('output')
+            let MUL = input1 * input2
+            output.innerText = ' Sum of ' + input1 + ' and ' + input2 + ' = ' + MUL
+        }
+        function result4() {
+            let input1 = document.getElementById('input1').value
+            let input2 = document.getElementById('input2').value
+            input1 = parseInt(input1)
+            input2 = parseInt(input2)
+            let output = document.getElementById('output')
+            let DVD = input1 / input2
+            output.innerText = ' Sum of ' + input1 + ' and ' + input2 + ' = ' + DVD
+        }
+        function result5() {
+            let input1 = document.getElementById('input1').value
+            let input2 = document.getElementById('input2').value
+            input1 = parseInt(input1)
+            input2 = parseInt(input2)
+            let output = document.getElementById('output')
+            let RMD = input1 % input2
+            output.innerText = ' qoutent  of ' + input1 + ' and ' + input2 + ' = ' + RMD
+        }
+    </script>
+</body>
+
+</html>
