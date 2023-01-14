@@ -65,6 +65,9 @@
             else if (a > b && a == c) {
                 document.getElementById('book').innerText = b + ' is small both'
             }
+            else if (a > c && a == b) {
+                document.getElementById('book').innerText = c + ' is small both'
+            }
            
             else {
                 document.getElementById('book').innerText = c + ' is greater'
@@ -89,7 +92,7 @@
             input2 = parseInt(input2)
             let output = document.getElementById('output')
             let SUB = input1 - input2
-            output.innerText = ' Sum of ' + input1 + ' and ' + input2 + ' = ' + SUB
+            output.innerText = ' Sub of ' + input1 + ' and ' + input2 + ' = ' + SUB
         }
         function result3() {
             let input1 = document.getElementById('input1').value
@@ -98,7 +101,7 @@
             input2 = parseInt(input2)
             let output = document.getElementById('output')
             let MUL = input1 * input2
-            output.innerText = ' Sum of ' + input1 + ' and ' + input2 + ' = ' + MUL
+            output.innerText = ' mul of ' + input1 + ' and ' + input2 + ' = ' + MUL
         }
         function result4() {
             let input1 = document.getElementById('input1').value
@@ -107,7 +110,7 @@
             input2 = parseInt(input2)
             let output = document.getElementById('output')
             let DVD = input1 / input2
-            output.innerText = ' Sum of ' + input1 + ' and ' + input2 + ' = ' + DVD
+            output.innerText = ' dvd of ' + input1 + ' and ' + input2 + ' = ' + DVD
         }
         function result5() {
             let input1 = document.getElementById('input1').value
